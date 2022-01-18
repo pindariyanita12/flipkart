@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font awsome icon/css/all.css">
+    <link rel="stylesheet" href="font style/Roboto-MediumItalic.ttf">
+    <script type="text/javascript">
+        var left = 1;
+        var right = 5;
+        function show() {
+
+            for (i = left; i <= right; i++) {
+                document.getElementById("c" + i).style.display = "inline-block";
+            }
+        }
+        function moveleft() {
+            if (left <= 3 && right <= 7) {
+                document.getElementById("c" + left).style.display = "none";
+                left += 1;
+                right += 1;
+                for (i = left; i <= right; i++) {
+                    document.getElementById("c" + i).style.display = "inline-block";
+                }
+            }
+            else {
+                return;
+            }
+        }
+        function moveright() {
+            if (left >= 2 && right >= 6) {
+                document.getElementById("c" + right).style.display = "none";
+                left -= 1;
+                right -= 1;
+                for (i = left; i <= right; i++) {
+                    document.getElementById("c" + i).style.display = "inline-block";
+                }
+            }
+            else {
+                return;
+            }
+        }
+    </script>
+</head>
+
+<body onload="show()">
+    <!-- header section -->
+
+    <header>
+        <div class="header-left">
+            <a href="#">Flipkart</a>
+            <div class="header-left-p">
+                <p><a href="#">Explore</a> <span>Plus<i class="fas fa-plus"></i></span></p>
+            </div>
+        </div>
+        <div class="header-center">
+            <input class="header-center-input" type="text" placeholder=" Search for products,Brands and more"><i
+                class="fas fa-search"></i>
+        </div>
+        <div class="header-right">
+            <a class="active" href="#">Login</a>
+            <a href="#">more <i class="fas fa-sort-down"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i>cart</a>
+        </div>
+    </header>
+
+    <!-- category-section -->
+
+    <section style="margin-left: 50px; margin-right: 50px;">
+        <div class="category-row">
+            <div class="category-col">
+                <img src="flipkart images/hp1.png" alt="">
+                <h5>Top Offers</h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp2.png" alt="">
+                <h5>Grocery</h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp3.png" alt="">
+                <h5>Mobile</h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp4.png" alt="">
+                <h5>Fashion <i class="fas fa-caret-down"></i></h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp5.png" alt="">
+                <h5>Electronics <i class="fas fa-caret-down"></i></h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp6.png" alt="">
+                <h5>Home <i class="fas fa-caret-down"></i></h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp7.png" alt="">
+                <h5>Appliances <i class="fas fa-caret-down"></i></h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp8.png" alt="">
+                <h5>Travel</h5>
+            </div>
+            <div class="category-col">
+                <img src=" flipkart images/hp9.png" alt="">
+                <h5>Beauty,Toys&More <i class="fas fa-caret-down"></i></h5>
+            </div>
+
+        </div>
+    </section>
+    <hr class="line" style="border: 1px solid rgb(233, 231, 231)">
+
+
+    <!-- Deals of the day section -->
+
+    <section class="abc">
+        <div class="card">
+            <div class="common-heading">
+                <div class="common-heading-left">
+                    <h1>Deals of the day&nbsp; <i class='far fa-clock'> 22:07:36 Left</i></h1>
+                </div>
+                <div class="common-heading-right">
+                    <button style="cursor: pointer;">VIEW ALL</button>
+                </div>
+            </div>
+            <div class="common-row" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+">
+                <div class="leftarrow" onclick="moveright()">
+                    <button>
+                        &lt;
+                    </button>
+                </div>
+                <div class="common-col" id="c1">
+
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Upto 80% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c2">
+                    <img src="/flipkart images/p1.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c3">
+                    <img src="/flipkart images/p2.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c4">
+                    <img src="/flipkart images/m5.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c5">
+                    <img src="/flipkart images/p2.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c6">
+                    <img src="/flipkart images/w4.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <!-- <div class="common-col" id="c7">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c8">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div> -->
+                <!-- <div class="common-col" id="c9">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c10">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c11">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6>
+                </div>
+                <div class="common-col" id="c12">
+                    <img src="/flipkart images/m6.jpeg" alt="mobile">
+                    <h3>Fastrack</h3>
+                    <h4>Extra 10% Off</h4>
+                    <h6>Knockout Deals!</h6> 
+                </div>
+                -->
+                
+                <div class="rightarrow" onclick="moveleft()">
+                    <button>
+                        &gt;
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <aside class="as">
+        <img src="flipkart images/try.jpg" width="200px" height="320px" alt="">
+    </aside>
+
+    <!-- music section -->
+
+
+    <section class="abcc">
+        <div class="cardd">
+            <div class="common-heading">
+                <div class="common-heading-left">
+                    <h1>Books and Music instruments</h1>
+                    <h2>Shop now!</h2>
+                </div>
+                <div class="common-heading-right">
+                    <button style="cursor: pointer;">VIEW ALL</button>
+                </div>
+            </div>
+            <div class="common-row" style="height: 200px; width: 80%; margin-left: 30px;">
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s1.jpeg" alt="mobile">
+                    <h3> Headphones</h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s2.jpeg" alt="mobile">
+                    <h3>techo speaker</h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s3.jpeg" alt="mobile">
+                    <h3>true wireless</h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s4.jpeg" alt="mobile">
+                    <h3>wired </h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s5.jpeg" alt="mobile">
+                    <h3>speaker</h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+                <div class="common-col col-headphones">
+                    <img src=" flipkart images/s6.jpeg" alt="mobile">
+                    <h3>Bluetooth</h3>
+                    <h4>new lancher</h4>
+                    <h6>Shop Now</h6>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
